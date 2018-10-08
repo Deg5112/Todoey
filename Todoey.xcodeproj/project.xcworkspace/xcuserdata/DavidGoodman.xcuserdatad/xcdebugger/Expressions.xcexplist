@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "TodoListViewController.searchBarSearchButtonClicked(_:):TodoListViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "itemArray">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in TodoListViewController.addButtonPressed(_:):TodoListViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.dataFilePath._url">
+            </PersistentString>
+            <PersistentString
+               value = "self.dataFilePath!">
+            </PersistentString>
+            <PersistentString
+               value = "self.itemArray">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
