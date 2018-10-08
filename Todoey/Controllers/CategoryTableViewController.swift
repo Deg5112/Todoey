@@ -8,8 +8,9 @@
 
 import UIKit
 import RealmSwift
+import SwipeCellKit
 
-class CategoryTableViewController: UITableViewController {
+class CategoryTableViewController: SwipeTableViewController {
     var categories : Results<Category>?
     
     let dataFilePath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
@@ -17,6 +18,7 @@ class CategoryTableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.rowHeight = 80
 
         loadCategories()
     }
@@ -26,10 +28,13 @@ class CategoryTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell", for: indexPath)
-        let category = categories?[indexPath.row];
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! SwipeTableViewCell
+        let cell = super.tableView(tableView, cellForRowAt: indexPath)
         
+        let category = categories?[indexPath.row];
         cell.textLabel?.text = category?.name ?? "No Categories added yet"
+        
+//        cell.delegate = self
         
         return cell
     }
@@ -73,6 +78,18 @@ class CategoryTableViewController: UITableViewController {
     func loadCategories() {
        categories = realm.objects(Category.self)
        tableView.reloadData()
+    }
+    
+    override func updateModel(at indexPath: IndexPath) {
+        if let category = self.categories?[indexPath.row] {
+            do {
+                try self.realm.write {
+                    self.realm.delete(category)
+                }
+            } catch {
+                print("realm delete fail, \(error)")
+            }
+        }
     }
     
     

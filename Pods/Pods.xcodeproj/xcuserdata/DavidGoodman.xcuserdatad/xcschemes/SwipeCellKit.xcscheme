@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6A170361C79CE67596C1DA76F44F18FD"
-               BuildableName = "Realm.framework"
-               BlueprintName = "Realm"
+               BlueprintIdentifier = "D53CEE5E626C9E07A6F8CBA238BBD801"
+               BuildableName = "SwipeCellKit.framework"
+               BlueprintName = "SwipeCellKit"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6A170361C79CE67596C1DA76F44F18FD"
-            BuildableName = "Realm.framework"
-            BlueprintName = "Realm"
+            BlueprintIdentifier = "D53CEE5E626C9E07A6F8CBA238BBD801"
+            BuildableName = "SwipeCellKit.framework"
+            BlueprintName = "SwipeCellKit"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

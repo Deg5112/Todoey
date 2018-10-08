@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Items-->
+        <!--Todoey-->
         <scene sceneID="qk4-BP-tmo">
             <objects>
                 <tableViewController id="TwS-tD-7PO" customClass="TodoListViewController" customModule="Todoey" customModuleProvider="target" sceneMemberID="viewController">
@@ -25,7 +25,7 @@
                             </connections>
                         </searchBar>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="todoItemCell" id="Fgx-b8-PjX">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="Fgx-b8-PjX" customClass="SwipeTableViewCell" customModule="SwipeCellKit">
                                 <rect key="frame" x="0.0" y="72" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fgx-b8-PjX" id="bwm-Bp-2iv">
@@ -39,7 +39,7 @@
                             <outlet property="delegate" destination="TwS-tD-7PO" id="yf4-6Q-59P"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Items" id="bt3-OP-B9k">
+                    <navigationItem key="navigationItem" title="Todoey" id="bt3-OP-B9k">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="8nE-0i-xBd">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
@@ -77,7 +77,7 @@
             </objects>
             <point key="canvasLocation" x="-879.20000000000005" y="-165.06746626686657"/>
         </scene>
-        <!--Todoey-->
+        <!--Category Table View Controller-->
         <scene sceneID="G2g-1k-mXf">
             <objects>
                 <tableViewController id="lQC-nB-9ty" customClass="CategoryTableViewController" customModule="Todoey" customModuleProvider="target" sceneMemberID="viewController">
@@ -86,7 +86,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CategoryCell" id="JLZ-XN-btJ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="JLZ-XN-btJ" customClass="SwipeTableViewCell" customModule="SwipeCellKit">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JLZ-XN-btJ" id="dVG-AU-2u3">
@@ -100,7 +100,7 @@
                             <outlet property="delegate" destination="lQC-nB-9ty" id="lam-67-0fj"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Todoey" id="twC-Kg-aqQ">
+                    <navigationItem key="navigationItem" id="twC-Kg-aqQ">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="OLe-4H-Rc4">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>

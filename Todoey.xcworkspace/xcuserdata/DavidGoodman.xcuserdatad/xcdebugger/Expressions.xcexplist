@@ -3,6 +3,17 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "CategoryTableViewController.tableView(_:cellForRowAt:):CategoryTableViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "indexPath.row">
+            </PersistentString>
+            <PersistentString
+               value = "super.tableView.cellForRow(at: indexPath)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "CategoryTableViewController.tableView(_:numberOfRowsInSection:):CategoryTableViewController.swift">
          <PersistentStrings>
             <PersistentString
